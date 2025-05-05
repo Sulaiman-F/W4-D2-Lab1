@@ -20,18 +20,25 @@ for (let i = 0; i <= 20; i++) {
 }
 
 console.log("the Fibonacci form 0 numbers");
-let Fibonacci = 0
-for (let i = 0; i <= 10; i++) {
-    Fibonacci += i
-    console.log(Fibonacci);
+let Fibonacci = 0, Y = 1
+console.log(Fibonacci);
+console.log(Y);
+
+
+for (let i = 2; i <= 10; i++) {
+    let temp = Fibonacci + Y
+    console.log(temp);
+    Fibonacci = Y
+    Y = temp
 }
 
 
 
-console.log("the Fibonacci form 0 numbers");
+console.log("the multiplication numbers");
 
-for (let i = 1; i <= 10; i++) {
-    for (let X = 1; X >= 4; X++) {
-        console.log(`${X} X ${i} = ${i * x}`);
+for (let i = 1; i <= 3; i++) {
+
+    for (let X = 1; X <= 10; X++) {
+        console.log(`${i} X ${X} = ${i * X}`);
     }
 }
